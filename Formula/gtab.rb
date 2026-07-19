@@ -1,18 +1,18 @@
 class Gtab < Formula
   desc "Ghostty tab workspace manager with an interactive TUI"
   homepage "https://github.com/yunluoxin/gtab"
-  version "1.8.0"
+  version "1.8.1"
   license "MIT"
   head "https://github.com/yunluoxin/gtab.git", branch: "main"
 
   on_arm do
-    url "https://github.com/yunluoxin/gtab/releases/download/v1.8.0/gtab-1.8.0-aarch64-apple-darwin.tar.gz"
-    sha256 "c431c4add525c638ff7b37ba480a9b70467c730532863dfa784ab0a60a2186a1"
+    url "https://github.com/yunluoxin/gtab/releases/download/v1.8.1/gtab-1.8.1-aarch64-apple-darwin.tar.gz"
+    sha256 "ab96cd3c3ec8f5ac71f751574b736533830bfc71f03dbf3204a52984b8952995"
   end
 
   on_intel do
-    url "https://github.com/yunluoxin/gtab/releases/download/v1.8.0/gtab-1.8.0-x86_64-apple-darwin.tar.gz"
-    sha256 "6dad0b3d668d2e605a328e796965fead1c00cda647dc7700a46d23f22b1efc03"
+    url "https://github.com/yunluoxin/gtab/releases/download/v1.8.1/gtab-1.8.1-x86_64-apple-darwin.tar.gz"
+    sha256 "fc24a3f6084c81a4c81c42d99b1f332e9e61b14c578cebb7b448ee98eee4d13b"
   end
 
   depends_on :macos
