@@ -1,18 +1,17 @@
 class Gtab < Formula
   desc "Ghostty tab workspace manager with an interactive TUI"
-  homepage "https://github.com/Franvy/gtab"
-  version "1.7.0"
+  homepage "https://github.com/yunluoxin/gtab"
+  url "https://github.com/yunluoxin/gtab.git",
+      tag: "v1.8.0"
+  version "1.8.0"
   license "MIT"
-
-  on_arm do
-    url "https://github.com/Franvy/gtab/releases/download/v1.7.0/gtab-1.7.0-aarch64-apple-darwin.tar.gz"
-    sha256 "03a585456e390407c5fb29170700a8fb50f3a00c47536a39bce04fc5c3d87a91"
-  end
+  head "https://github.com/yunluoxin/gtab.git", branch: "main"
 
   depends_on :macos
+  depends_on "rust" => :build
 
   def install
-    bin.install "gtab"
+    system "cargo", "install", *std_cargo_args
   end
 
   def caveats
